@@ -10,45 +10,53 @@
 </head>
 
 <body>
-  <div class="wrap fade-in">
+  <div class="wrap">
     <div class="card">
 
-      <header class="slide-up">
+      <header>
         <img src="logo.png">
         <div>
           <h1>iron_127</h1>
           <div class="desc">隨便寫寫東西、偶爾做點專案</div>
-
-          <div class="links">
-            <a href="#projects">作品</a>
-            <a href="https://github.com/Feliex127">GitHub</a>
-          </div>
         </div>
       </header>
 
-      <h2 id="projects">一些做過的東西</h2>
+      <h2>原界 Minecraft</h2>
 
-      <!-- 可點擊作品 -->
-      <a class="project reveal" href="#" target="_blank">
-        <strong>Discord 管理機器人</strong>
-        <small>2026 · 有網頁面板 + 自動化功能</small>
-      </a>
-
-      <a class="project reveal" href="https://starry-night-bonfire.pages.dev/" target="_blank">
-        <strong>星夜篝火 伺服器</strong>
-        <small>2025 · Minecraft 伺服器</small>
-      </a>
-
-      <div class="project reveal">
-        <strong>西瓜皮 伺服器</strong>
-        <small>2024 · 已關閉</small>
+      <!-- 伺服器狀態 -->
+      <div class="server-box">
+        <div id="serverStatus">讀取中...</div>
+        <div id="motd"></div>
       </div>
 
-      <h2>聯絡</h2>
-      <p class="contact">
-        Discord: feliex127<br>
-        GitHub: Feliex127
-      </p>
+      <h2>作品</h2>
+
+      <!-- 主專案 -->
+      <div class="project" onclick="this.classList.toggle('active')">
+        <strong>原界 伺服器</strong>
+        <small>點開看資訊</small>
+
+        <div class="project-detail">
+          官網：
+          <a href="https://orirea.vercel.app/" target="_blank">orirea.vercel.app</a><br>
+          Discord：
+          <a href="https://discord.gg/Yby87b7TAp" target="_blank">加入</a><br><br>
+
+          Java：teb.taiwanfrp.me<br>
+          Bedrock：tpe-cht1.taiwanfrp.me : 12347
+        </div>
+      </div>
+
+      <!-- 舊專案 -->
+      <div class="project">
+        <strong>星夜篝火</strong>
+        <small>已關閉</small>
+      </div>
+
+      <div class="project">
+        <strong>西瓜皮</strong>
+        <small>已關閉</small>
+      </div>
 
       <footer>
         © <span id="year"></span> iron
